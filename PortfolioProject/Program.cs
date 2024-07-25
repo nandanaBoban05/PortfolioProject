@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using PortfolioProject.Data;
+
 namespace PortfolioProject
 {
     public class Program
@@ -8,6 +11,9 @@ namespace PortfolioProject
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(builder
+   .Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidCastException()));
+
 
             var app = builder.Build();
 
