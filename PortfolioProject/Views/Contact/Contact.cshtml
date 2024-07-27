@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model PortfolioProject.Models.Contact
+
+    <div id="contact" class="container py-5">
+        <div class="row justify-content-center">
+            <!-- Contact Information -->
+            <div class="col-lg-6 mb-4">
+                <h1 class="sub-title mb-4">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> nandanaboban03@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 1234567890</p>
+                <div class="social-icons mt-3">
+                    <a href="https://www.linkedin.com/in/nandanaboban" class="text-light me-3"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                    <a href="https://www.instagram.com/" class="text-light me-3"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-light"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+                <form class="text-center" asp-action="Contact">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" name="Email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>

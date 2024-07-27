@@ -3,15 +3,16 @@ using PortfolioProject.Data;
 
 namespace PortfolioProject.Controllers
 {
-    public class EducationController : Controller
+    public class AboutController : Controller
     {
         private readonly ApplicationDBContext _dBContext;
 
-        public EducationController(ApplicationDBContext applicatonDBContext)
+        public AboutController(ApplicationDBContext applicatonDBContext)
         {
             _dBContext = applicatonDBContext;
         }
-        public IActionResult Education()
+        [ HttpGet]
+        public IActionResult AboutIndex()
         {
             return View();
         }

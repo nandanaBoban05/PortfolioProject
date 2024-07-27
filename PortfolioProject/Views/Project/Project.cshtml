@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<Project>
+
+<div class="container my-5">
+    <h1 class="sub-title text-center mb-5">My Works</h1>
+    <div class="row">
+        @foreach (var work in Model)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card">
+                    <img src="~/img/work-1.jpg" class="card-img-top" alt="@work.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@work.Name</h5>
+                        <p class="card-text"><strong>URL:</strong> <a href="@work.Url" target="_blank"><i class="fa fa-link"></i></a></p>
+                        <p class="card-text"><strong>Start Date:</strong> @work.StartDate</p>
+                        <p class="card-text"><strong>End Date:</strong> @work.EndDate</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
