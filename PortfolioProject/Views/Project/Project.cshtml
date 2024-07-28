@@ -13,7 +13,7 @@
         {
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card project-card">
-                    <img src="~/img/work-1.jpg" class="card-img-top" alt="@work.Name">
+                    <img src="@Url.Content(work.ImageUrl)" class="card-img-top" alt="@work.Name">
                     <div class="card-body">
                         <h5 class="card-title">@work.Name</h5>
                         <p class="card-text"><strong>URL:</strong> <a href="@work.Url" target="_blank"><i class="fa fa-link"></i></a></p>

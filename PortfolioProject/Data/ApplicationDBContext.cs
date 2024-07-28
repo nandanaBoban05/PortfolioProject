@@ -20,7 +20,9 @@ namespace PortfolioProject.Data
                    Name = "Eliassen Group",
                    Url = "http://project1.com",
                    StartDate = new DateOnly(2024, 2, 5),
-                   EndDate = new DateOnly(2024, 6, 30)
+                   EndDate = new DateOnly(2024, 6, 30),
+                   ImageUrl = "~/img/work-1.jpg"
+
                },
                 new Project
                 {
@@ -28,7 +30,8 @@ namespace PortfolioProject.Data
                     Name = "Project 2",
                     Url = "http://project2.com",
                     StartDate = new DateOnly(2024, 3, 1),
-                    EndDate = new DateOnly(2024, 8, 15)
+                    EndDate = new DateOnly(2024, 8, 15),
+                    ImageUrl = "~/img/work-2.jpg"
                 },
                 new Project
                 {
@@ -36,7 +39,8 @@ namespace PortfolioProject.Data
                     Name = "Project 3",
                     Url = "http://project3.com",
                     StartDate = new DateOnly(2024, 4, 10),
-                    EndDate = new DateOnly(2024, 9, 20)
+                    EndDate = new DateOnly(2024, 9, 20),
+                    ImageUrl = "~/img/work-3.jpg"
                 }
                 );
 
